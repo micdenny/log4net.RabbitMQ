@@ -47,6 +47,9 @@ For SSL -- have a look at: http://www.rabbitmq.com/ssl.html
 
 A guide to setting up a secure corporate messaging infrastructure w/ .Net might be in the works... ;) Keep tuned to @henrikfeldt on twitter!
 
+Sponsored by
+[qvitoo – A.I. bookkeeping](https://qvitoo.com/?utm_source=github&utm_campaign=repos).
+
 ## Example log4net.config
 
 This configuration demonstrates usage of the properties from above:
