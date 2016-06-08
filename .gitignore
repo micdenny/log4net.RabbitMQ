@@ -11,3 +11,4 @@ vendor
 build
 paket.exe
 packages/
+.vs/
