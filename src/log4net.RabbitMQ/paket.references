@@ -1,2 +1,3 @@
 log4net
 RabbitMQ.Client
+EasyNetQ

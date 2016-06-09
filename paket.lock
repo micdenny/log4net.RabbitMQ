@@ -4,6 +4,8 @@ NUGET
     Antlr (3.4.1.9004)
     bootstrap (3.0.0)
       jQuery (>= 1.9.0)
+    EasyNetQ (0.59.0.434)
+      RabbitMQ.Client (>= 3.6.0)
     jQuery (1.10.2)
     jQuery.Validation (1.11.1)
       jQuery (>= 1.4.4)

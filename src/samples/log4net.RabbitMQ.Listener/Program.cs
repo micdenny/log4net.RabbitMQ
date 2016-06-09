@@ -44,7 +44,9 @@ namespace log4net.RabbitMQ.Listener
 								m.QueueBind(q, exchange, "#");
 								m.BasicConsume(q, true, consumer);
 
-								while (true)
+                                Console.WriteLine("Connected, consuming from log queue...");
+
+                                while (true)
 								{
 									var msg = (BasicDeliverEventArgs) consumer.Queue.Dequeue();
 

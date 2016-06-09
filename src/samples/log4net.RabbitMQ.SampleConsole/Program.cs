@@ -15,6 +15,8 @@ namespace log4net.RabbitMQ.SampleConsole
 
             for (int i = 0; i < 10; i++)
             {
+                Console.ReadLine();
+
                 log.Debug($"Debug {i}");
 
                 if (i % 2 == 0)
