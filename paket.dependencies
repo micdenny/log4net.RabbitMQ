@@ -15,7 +15,7 @@ nuget Microsoft.Web.Infrastructure 1.0.0.0
 nuget Modernizr 2.6.2
 nuget Newtonsoft.Json 6.0.4
 nuget NUnit 2.6.4
-nuget RabbitMQ.Client 3.5.1
+nuget RabbitMQ.Client 3.6.0
 nuget Respond 1.2.0
 nuget SharpTestsEx 1.1.1
 nuget WebGrease 1.5.2

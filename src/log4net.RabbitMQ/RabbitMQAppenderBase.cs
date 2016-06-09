@@ -240,9 +240,12 @@ namespace log4net.RabbitMQ
             byte[] message = GetMessage(loggingEvent);
             string topic = GetTopic(loggingEvent);
 
-            _Model.BasicPublish(this._ExchangeProperties.Name, topic,
-                    true, false, basicProperties,
-                    message);
+            _Model.BasicPublish(
+                this._ExchangeProperties.Name, 
+                topic, 
+                false, 
+                basicProperties, 
+                message);
 
         }
 
@@ -252,8 +255,8 @@ namespace log4net.RabbitMQ
             basicProperties.ContentEncoding = "utf8";  // because this is our _Encoding type
             basicProperties.ContentType = Format(loggingEvent);
             basicProperties.AppId = this.MessageProperties.AppId ?? loggingEvent.LoggerName;
-
-            basicProperties.SetPersistent(this._MessageProperties.Persistent);
+            basicProperties.Persistent = this._MessageProperties.Persistent;
+            
             this.InitMessagePriority(basicProperties, loggingEvent);
 
             basicProperties.Timestamp = new AmqpTimestamp(

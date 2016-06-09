@@ -26,7 +26,7 @@ NUGET
     Newtonsoft.Json (6.0.4)
     NuGet.CommandLine (2.8.3)
     NUnit (2.6.4)
-    RabbitMQ.Client (3.5.1)
+    RabbitMQ.Client (3.6.0)
     Respond (1.2.0)
     SharpTestsEx (1.1.1)
     WebGrease (1.5.2)
